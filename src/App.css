@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* App Compenent */
+.container {
+  margin: auto;
+  min-height: 100vh;
+}
+
+/* Main Compenent ---------------------- */
+
+/* Form Compenent */
+
+.searchbar-compenent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.searchbar-wrapper {
+  width: 80%;
+  max-width: 500px;
+  min-width: 300px;
+  height: 65px;
+}
+
+.input-wrapper {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.219);
+  width: 100%;
+  border-radius: 30px;
+  height: 45px;
+  padding: 0px 2px;
+}
+
+.text {
+  width: 80%;
+  margin: 0;
+  padding: 0px 0px 0px 20px;
+  border: none;
+  height: 100%;
+  float: left;
+  background: none;
+}
+
+.submit {
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.404);
+  text-shadow: 1px 1px 5px rgba(73, 73, 73, 0.514);
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: lighter;
+  margin: 0;
+  height: 100%;
+}
+
+.submit:hover {
+  color: rgb(1, 59, 168);
+  font-size: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+  }
+}
