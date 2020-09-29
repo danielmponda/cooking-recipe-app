@@ -113,30 +113,51 @@ body {
 }
 
 .recipe-wrapper {
-  display: flex;
+  /* display: flex; */
+  /* flex-direction: column; 
+  */
   justify-content: center;
-  flex-direction: row;
+  /* flex-direction: row; */
   padding: 10px;
-  margin-top: 100px;
-  max-width: 500px;
-  min-width: 300px;
-  overflow-x: scroll;
+  /* margin-top: 100px; */
+
+  /* overflow-x: scroll; */
   /* background-color: black; */
+  width: 50%;
 }
 
 .recipe {
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
-  /* border: 1px solid rgba(153, 153, 153, 0.418); */
+  /* align-items: left; */
+  border: 1px solid rgba(153, 153, 153, 0.418);
   border-radius: 10px;
   margin-bottom: 10px;
-  width: 50%;
+  width: 100%;
+  color: white;
 }
 
 .img-label {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+.pagination {
+  list-style: none;
+  float: left;
+  text-decoration: none;
+}
+
+.pagination > li {
+  float: left;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.pagination > li a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
