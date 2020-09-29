@@ -15,8 +15,8 @@ function SearchBar(props) {
           <div className="input-wrapper">
             <input
               type="text"
-              className="input-form text"
-              placeholder="search for recipe..."
+              className="input-form textInput"
+              placeholder="search for recipe ..."
               value={value}
               onChange={(e) => setValue(e.target.value)}
             />
