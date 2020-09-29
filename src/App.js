@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import SearchBar from './compenent/SearchBar'
 import Header from './compenent/Header'
 import Recipes from './compenent/Recipes'
+import Pagination from './compenent/Pagination'
+
 import './App.css'
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
   const APP_KEY = '06bd1a0e0b7da0e3bb098a6f14a3f394'
 
   const [recipes, setRecipes] = useState([])
+  const [currentPage, setCurrentPage] = useState(1)
+  const [recipesPerPage] = useState(10)
 
   useEffect(() => {
     getRecipes()
@@ -22,13 +26,26 @@ function App() {
     setRecipes(data.hits)
   }
 
+  // Get current poss
+  const indexOfLastRecipe = currentPage * recipesPerPage
+  const indexOfFirstRecipe = indexOfLastRecipe - recipesPerPage
+  const currentRecipe = recipes.slice(indexOfFirstRecipe, indexOfLastRecipe)
+
+  // Change page
+  function paginate(pageNumber) {
+    setCurrentPage(pageNumber)
+  }
+
   return (
     <div className="container">
       <Header />
-
-      {/* <img class="logo" src={logo} alt="" /> */}
       <SearchBar />
-      <Recipes reciper={recipes} />
+      <Recipes reciper={currentRecipe} />
+      <Pagination
+        recipesPerPage={recipesPerPage}
+        totalRecipes={recipes.length}
+        paginate={paginate}
+      />
     </div>
   )
 }
