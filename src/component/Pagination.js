@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Pagination({ recipesPerPage, totalRecipes, paginate }) {
+function Pagination({ recipesPerPage, totalRecipes, paginate, currentPage }) {
   const pageNumers = []
 
   for (let i = 1; i <= Math.ceil(totalRecipes / recipesPerPage); i++) {
