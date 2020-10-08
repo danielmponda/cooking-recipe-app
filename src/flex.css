@@ -1,0 +1,115 @@
+@media only screen and (min-width: 768px) {
+  .container {
+    margin: auto;
+    min-height: 100vh;
+    /* display: flex; */
+  }
+
+  .recipe-wrapper {
+    padding: 10px;
+    /* background-color: rgb(194, 194, 194); */
+    width: 950px;
+    min-width: 300px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+  }
+
+  .recipe {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: left; */
+    width: 45%;
+    float: left;
+    /* background-color: pink; */
+    margin: 10px;
+  }
+
+  /* recipeview  */
+
+  .recipeview-page {
+    height: 510px;
+    width: 100%;
+  }
+
+  .recipeview-compenent {
+    height: 510px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 128, 128);
+  }
+
+  .item-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 510px;
+  }
+
+  .item-sec-a {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* up and down */
+    justify-content: center; /* side to side */
+    height: 100%;
+  }
+
+  .item-sec-a .recipe-view {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: tomato; */
+    align-items: center;
+    text-align: center;
+  }
+  .item-sec-b {
+    width: 50%;
+    /* background-color: rgb(255, 255, 255); */
+    /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+    /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    /* clip-path: polygon(50% 99%, 0 60%, 32% 60%, 63% 0, 100% 0, 70% 60%, 100% 60%); */
+    /* overflow: hidden; */
+    /* box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.938); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+      justify-content: center; */
+    /* background-color: #8d8d8d10; */
+    background-color: #e4e4e4;
+  }
+
+  .recipe-view-ingr {
+    width: 70%;
+    /* background-color: tomato; */
+    /* padding: 10px; */
+    /* height: 300px; */
+    /* text-align: center; */
+  }
+
+  .recipe-view-ingr ul {
+    list-style: none;
+    width: 70%;
+  }
+
+  .recipe-view-ingr li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid beige;
+  }
+
+  .ingredient-title {
+    width: 70%;
+    margin: 0 0 0 40px;
+    border-bottom: 3px solid rgba(46, 46, 46, 0.466);
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .img-label-view {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.938);
+  }
+}
