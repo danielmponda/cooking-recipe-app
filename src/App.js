@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import SearchBar from './compenent/SearchBar'
-import Header from './compenent/Header'
-import Recipes from './compenent/Recipes'
-import Pagination from './compenent/Pagination'
-
+import Header from './component/Header'
+import Home from './component/HomePage'
+import RecipeView from './component/RecipeViewPage'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
 
 function App() {
@@ -14,38 +13,49 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1)
   const [recipesPerPage] = useState(10)
 
+  const [search, setSearch] = useState('chicken')
+
   useEffect(() => {
     getRecipes()
-  }, [])
+  }, [search])
 
   const getRecipes = async () => {
     const response = await fetch(
-      `https://api.edamam.com/search?q=salad&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=20`
+      `https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=24`
     )
     const data = await response.json()
     setRecipes(data.hits)
   }
 
-  // Get current poss
-  const indexOfLastRecipe = currentPage * recipesPerPage
-  const indexOfFirstRecipe = indexOfLastRecipe - recipesPerPage
-  const currentRecipe = recipes.slice(indexOfFirstRecipe, indexOfLastRecipe)
-
-  // Change page
-  function paginate(pageNumber) {
-    setCurrentPage(pageNumber)
-  }
-
   return (
     <div className="container">
-      <Header />
-      <SearchBar />
-      <Recipes reciper={currentRecipe} />
-      <Pagination
-        recipesPerPage={recipesPerPage}
-        totalRecipes={recipes.length}
-        paginate={paginate}
-      />
+      <Router>
+        {/* <Header /> */}
+        <Switch>
+          <Route
+            exact
+            path="/"
+            component={() => (
+              <Home
+                recipes={recipes}
+                search={search}
+                setSearch={setSearch}
+                recipesPerPage={recipesPerPage}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+              />
+            )}
+          />
+          <Route exact path="/recipeview" component={RecipeView} />
+          <Route
+            exact
+            path="/recipeview/:id"
+            render={({ match }) => (
+              <RecipeView id={match.params.id} recipes={recipes} />
+            )}
+          />
+        </Switch>
+      </Router>
     </div>
   )
 }
