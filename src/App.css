@@ -20,28 +20,26 @@ body {
 }
 
 .header {
-  /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.219); */
   width: 100%;
   height: 60px;
-
-  /* background-color: white; */
-  /* display: none; */
-  /* background-color: rgb(0, 128, 128); */
 
   overflow: hidden;
 }
 
-/* Main Compenent ---------------------- */
+/* ////////////////////////// HOME PAGE ////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
 
 .home-page {
   margin: auto;
   width: 100%;
-  /* background-color: cyan; */
+
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+
   align-items: center;
 }
+
+/* ////////////////////////////////////////////////////////////////// */
 
 /* Form Compenent */
 .searchbar-compenent {
@@ -58,14 +56,6 @@ body {
     rgba(0, 128, 128, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  /* background-color: #008080; */
-  /* background: -webkit-linear-gradient(
-    top,
-    rgba(0, 128, 128, 1) 0%,
-    rgba(0, 207, 207, 1) 55%,
-    rgba(14, 230, 230, 1) 74%,
-    rgba(255, 255, 255, 1) 100%
-  ); */
 }
 
 .search-wrapper {
@@ -75,7 +65,7 @@ body {
   justify-content: center;
   background-image: url('./img/logo3.png');
   background-size: cover;
-  /* background-position: 10px 30px; */
+  background-position: -60px 0px;
   width: 830px;
   height: 410px;
   /* background-color: darkgoldenrod; */
@@ -95,6 +85,7 @@ body {
   /* border-radius: 30px; */
   /* margin-left: 80px; */
   /* position: fixed; */
+  position: relative;
 }
 
 .input-wrapper {
@@ -133,15 +124,21 @@ body {
   text-shadow: 1px 1px 3px rgba(73, 73, 73, 0.514);
   font-size: 20px;
   cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 4px;
   font-weight: lighter;
   margin: 0;
   height: 100%;
+  transition: ease 0.2s;
 }
 
 .submit:hover {
-  color: rgb(1, 59, 168);
-  font-size: 22px;
+  color: rgb(4, 214, 214);
+  /* font-size: 21px; */
 }
+
+/* ////////////////////////////////////////////////////////////////// */
 
 .recipe-wrapper {
   /* display: flex;
@@ -153,7 +150,7 @@ body {
   /* height: 100px; */
   /* overflow-x: scroll; */
   /* background-color: rgb(194, 194, 194); */
-  /* width: 100%; */
+  width: 90%;
   /* max-width: 350px;
   min-width: 300px; */
   font-family: 'Lato', sans-serif;
@@ -187,38 +184,20 @@ body {
   background-color: rgb(0, 128, 128);
 }
 
+.recipe-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  /* margin-top: -45px; */
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.938);
+}
+
 .img-label {
   width: 110px;
   height: 110px;
   border-radius: 50%;
   margin-top: -45px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.938);
-}
-
-.pagination {
-  list-style: none;
-  float: left;
-  text-decoration: none;
-}
-
-.pagination > li {
-  float: left;
-  margin: 5px;
-  text-decoration: none;
-}
-
-.pagination > li a {
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.39);
-  color: white;
-  font-weight: bold;
-  background-color: #353535f1;
-}
-
-.pagination > li a:hover {
-  cursor: pointer;
-  background-color: rgba(201, 84, 42, 0.192);
 }
 
 .recipe-info {
@@ -254,27 +233,79 @@ body {
   margin-left: 7px;
 }
 
+/* ////////////////////////////////////////////////////////////////// */
+
+.pagination {
+  list-style: none;
+  float: left;
+  text-decoration: none;
+}
+
+.pagination > li {
+  float: left;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.pagination > li a {
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.39);
+  color: white;
+  font-weight: bold;
+  background-color: #353535f1;
+}
+
+.pagination > li a:hover {
+  cursor: pointer;
+  background-color: rgba(201, 84, 42, 0.192);
+}
+
+/* ////////////////////recipeview-page////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////// */
+
 .recipeview-page {
   /* height: 510px; */
   width: 100%;
+  /* display: none; */
 }
 
 .recipeview-compenent {
+  height: 510px;
+  width: 100%;
   /* background-color: rgb(0, 128, 128); */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 128, 128, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .item-wrapper {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  margin-top: -490px;
+  /* display: flex;
+  flex-direction: column; */
 }
+/* ////////////////////////////////////////////////////////////////// */
 
 .item-sec-a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* up and down */
-  justify-content: center; /* side to side */
+  align-items: center;
+  /* justify-content: flex-end; */
   height: 100%;
+  /* background-color: chocolate; */
+}
+
+.img-label-view {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.938);
+  /* margin-left: 30px; */
 }
 
 .item-sec-a .recipe-view {
@@ -284,11 +315,22 @@ body {
   /* background-color: tomato; */
   align-items: center;
   text-align: center;
+  width: 310px;
+  /* height: 310px; */
 }
+
+.ingredient-title {
+  /* border-top: 5px solid rgba(128, 128, 128, 0.685); */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
 .item-sec-b {
-  width: 100%;
+  /* width: 100%; */
   /* background-color: rgba(129, 129, 129, 0.233); */
-  background-color: rgba(141, 141, 141, 0.459);
+  /* background-color: rgba(141, 141, 141, 0.459); */
 
   display: flex;
   flex-direction: column;
@@ -305,20 +347,21 @@ body {
   align-items: center;
   /* justify-content: center; */
   overflow-y: auto;
+  border-top: 5px solid rgba(128, 128, 128, 0.685);
 }
 
-.ingredient-title {
+/* .ingredient-title {
   width: 90%;
   margin: 0px;
   border-bottom: 3px solid rgba(46, 46, 46, 0.466);
   padding: 5px;
   font-size: 20px;
   text-align: center;
-}
+} */
 
 .recipe-view-ingr ul {
   list-style: none;
-  width: 90%;
+  /* width: 90%; */
   text-align: center;
   padding: 0;
 }
@@ -329,9 +372,10 @@ body {
   padding: 10px;
 }
 
-.img-label-view {
-  width: 310px;
-  height: 310px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.938);
+.relatedtitle {
+  width: 40%;
+  text-align: center;
+  /* border-bottom: 3px solid rgba(0, 0, 0, 0.13); */
+  padding-bottom: 10px;
+  /* margin: 20px 0; */
 }
