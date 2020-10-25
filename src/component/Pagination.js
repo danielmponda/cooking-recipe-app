@@ -12,7 +12,11 @@ function Pagination({ recipesPerPage, totalRecipes, paginate, currentPage }) {
       <ul className="pagination">
         {pageNumers.map((number) => (
           <li key={number}>
-            <a onClick={() => paginate(number)} href="!#">
+            <a
+              onClick={() => {
+                paginate(number)
+              }}
+            >
               {number}
             </a>
           </li>
