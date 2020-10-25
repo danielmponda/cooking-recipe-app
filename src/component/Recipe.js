@@ -15,7 +15,13 @@ function Recipe({ props }) {
           ? `<p className="deit"> Deit : ${props.recipe.dietLabels}</p>`
           : null} */}
       </div>
-      <img className="img-label" src={props.recipe.image} alt="" />
+      <div className="img-label">
+        {props.recipe.image ? (
+          <img className="recipe-img" alt="pic" src={props.recipe.image} />
+        ) : (
+          <h1>Loading</h1>
+        )}
+      </div>
     </div>
   )
 }
