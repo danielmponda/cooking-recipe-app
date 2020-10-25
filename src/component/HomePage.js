@@ -19,11 +19,11 @@ function Home({
   function paginate(pageNumber) {
     setCurrentPage(pageNumber)
   }
-
+  const view = 'search'
   return (
     <div className="home-page">
       <Search search={search} setSearch={setSearch} />
-      <Recipes reciper={currentRecipe} />
+      <Recipes reciper={currentRecipe} view={view} />
       <Pagination
         recipesPerPage={recipesPerPage}
         totalRecipes={recipes.length}
