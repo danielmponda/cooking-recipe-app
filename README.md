@@ -1,6 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Cooking Recipe App 
 
-## Available Scripts
+https://danielmponda.github.io/cooking-recipe-app
+
+The Best Web Based App for Discovering and Managing Your Recipe Collection.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Developer](#Developer)
+- [Copyright and License](#copyright-and-license)
+
+## Installation
+
+### Clone repo
+
+```bash
+# clone the repo
+$ git clone https://github.com/danielmponda/weatherApp.git
+
+# go into app's directory
+$ cd weatherApp
+
+# install app's dependencies
+$ npm install
+```
 
 In the project directory, you can run:
 
@@ -37,32 +60,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `yarn deploy`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Rebuilds the app for production to the `build` folder and then deploy the given `build` folder to github pages 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Developer
 
-### Code Splitting
+**_Daniel Mponda_**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- <https://github.com/danielmponda>
+- <https://twitter.com/daniel_mponda>
+ 
+## Copyright and License
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+copyright 2020 Cooking Recipe App
