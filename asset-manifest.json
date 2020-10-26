@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/cooking-recipe-app/static/css/main.f5be8309.chunk.css",
-    "main.js": "/cooking-recipe-app/static/js/main.87ed9480.chunk.js",
-    "main.js.map": "/cooking-recipe-app/static/js/main.87ed9480.chunk.js.map",
+    "main.js": "/cooking-recipe-app/static/js/main.7166174a.chunk.js",
+    "main.js.map": "/cooking-recipe-app/static/js/main.7166174a.chunk.js.map",
     "runtime-main.js": "/cooking-recipe-app/static/js/runtime-main.2dd692e5.js",
     "runtime-main.js.map": "/cooking-recipe-app/static/js/runtime-main.2dd692e5.js.map",
-    "static/js/2.e382f94a.chunk.js": "/cooking-recipe-app/static/js/2.e382f94a.chunk.js",
-    "static/js/2.e382f94a.chunk.js.map": "/cooking-recipe-app/static/js/2.e382f94a.chunk.js.map",
+    "static/js/2.d5f90173.chunk.js": "/cooking-recipe-app/static/js/2.d5f90173.chunk.js",
+    "static/js/2.d5f90173.chunk.js.map": "/cooking-recipe-app/static/js/2.d5f90173.chunk.js.map",
     "index.html": "/cooking-recipe-app/index.html",
-    "precache-manifest.d10a6b43a6c410ec934c1af66627f6bd.js": "/cooking-recipe-app/precache-manifest.d10a6b43a6c410ec934c1af66627f6bd.js",
+    "precache-manifest.cf74e3a9789b998504f65223cdd08456.js": "/cooking-recipe-app/precache-manifest.cf74e3a9789b998504f65223cdd08456.js",
     "service-worker.js": "/cooking-recipe-app/service-worker.js",
     "static/css/main.f5be8309.chunk.css.map": "/cooking-recipe-app/static/css/main.f5be8309.chunk.css.map",
-    "static/js/2.e382f94a.chunk.js.LICENSE.txt": "/cooking-recipe-app/static/js/2.e382f94a.chunk.js.LICENSE.txt",
+    "static/js/2.d5f90173.chunk.js.LICENSE.txt": "/cooking-recipe-app/static/js/2.d5f90173.chunk.js.LICENSE.txt",
     "static/media/App.css": "/cooking-recipe-app/static/media/logo3.92bac27c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2dd692e5.js",
-    "static/js/2.e382f94a.chunk.js",
+    "static/js/2.d5f90173.chunk.js",
     "static/css/main.f5be8309.chunk.css",
-    "static/js/main.87ed9480.chunk.js"
+    "static/js/main.7166174a.chunk.js"
   ]
 }
